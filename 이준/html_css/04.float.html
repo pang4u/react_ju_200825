@@ -1,0 +1,44 @@
+<html>
+<head>
+	<style>
+		* { margin: 0; padding: 0; list-style: none; }
+		body { 
+			background: #f0f0f0;
+		}
+		header {
+			height: 100px;
+			background: white;
+		}
+		nav {
+			width: 700px;
+			height: 100px;
+			margin: 0 auto;
+			background: darkgray;
+		}
+		ul {
+			/* ul태그의 높이를 잡는데 필요하다.
+			단, 자식 태그에서 float를 줬을 때 한정 */
+			overflow: hidden;
+		}
+		li {
+			float: left;
+			line-height: 50px;
+			width: calc(100% / 5);
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li>menu1</li>
+				<li>menu2</li>
+				<li>menu3</li>
+				<li>menu4</li>
+				<li>menu5</li>
+			</ul>
+		</nav>
+	</header>
+</body>
+</html>
