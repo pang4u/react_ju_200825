@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      width: 700px;
+      height: 500px;
+      margin: 100px auto;
+      border: 2px solid;
+    }
+    .box {
+      background: darkgreen;
+      width: calc( (100% - 20px * 2) / 3 );
+      height: 150px;
+      float: left;
+      margin-right: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+    }
+    .box:nth-child(3n) {
+      margin-right: 0px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box nomargin"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box nomargin"></div>
+  </div>
+</body>
+</html>
